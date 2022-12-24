@@ -10,7 +10,7 @@ export class PrioritaireComponent implements OnInit {
   prioritaires: any=[];
 
   constructor(private http: HttpClient   ) {
-    this.http.get('http://localhost:9000/RADAR-SERVICE/query/radars').subscribe(data => {
+    this.http.get('http://localhost:9000/IMMATRICULATION-SERVICE/query/vehicules').subscribe(data => {
       this.prioritaires = data;
     }
     );

@@ -1,1 +1,22 @@
-<p>prioritaire works!</p>
+<div class="card">
+    <div class="card-container yellow-container">
+        <div class="block bg-blue-500 font-bold text-center p-4 border-round mb-3"><p-table [value]="prioritaires" [tableStyle]="{'min-width': '50rem'}">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>marque</th>
+                    <th>immatriculation</th>
+                    <th>prenom</th>
+                    <th>telephone</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-customer>
+                <tr>
+                    <td>{{customer.marque}}</td>
+                    <td>{{customer.immatriculation}}</td>
+                    <td>{{customer['proprietaire'].prenom}}</td>
+                    <td>{{customer['proprietaire'].telephone}}</td>
+            </ng-template>
+        </p-table>
+        </div>
+    </div>
+</div>

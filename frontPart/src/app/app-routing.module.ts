@@ -11,7 +11,8 @@ const routes: Routes = [
   { 
     path: 'priotaire',
     component: PrioritaireComponent
-  }
+  },
+  
 ];
 
 @NgModule({
